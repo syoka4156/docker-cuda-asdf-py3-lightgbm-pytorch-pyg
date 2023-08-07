@@ -1,5 +1,5 @@
 FROM nvidia/cuda:11.7.1-cudnn8-runtime-ubuntu20.04
-WORKDIR /ws
+WORKDIR /root
 ENV TZ=Asia/Tokyo
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
@@ -52,7 +52,7 @@ RUN echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc \
 && echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bashrc 
 ENV PATH="/root/.asdf/shims:/root/.asdf/bin:${PATH}"
 
-COPY requirements.txt /ws/
+COPY requirements.txt /root/ws/
 
 # Python
 RUN source ~/.bashrc \
@@ -63,7 +63,7 @@ RUN source ~/.bashrc \
 && pip install --no-cache-dir torch==1.13.1+cu117 torchvision==0.14.1+cu117 --extra-index-url https://download.pytorch.org/whl/cu117 \
 && pip install --no-cache-dir torch_geometric \
 && pip install --no-cache-dir pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-1.13.0+cu117.html \
-&& pip install --no-cache-dir -r requirements.txt
+&& pip install --no-cache-dir -r ./ws/requirements.txt
 
 # LightGBM for GPU
 RUN mkdir -p /etc/OpenCL/vendors && \

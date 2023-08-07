@@ -5,6 +5,6 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ./ws:/ws
+      - ../ws:/root/ws
     tty: true
     shm_size: '64gb'
