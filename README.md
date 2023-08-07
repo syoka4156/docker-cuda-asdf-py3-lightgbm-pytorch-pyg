@@ -1,5 +1,7 @@
 # docker-cuda-asdf-py3-lightgbm-pytorch-pyg
 
+cuda11.7 + asdf + LightGBM + Pytorch + PyG
+
 ## Build docker image
 
 ```
