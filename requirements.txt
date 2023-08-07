@@ -1,0 +1,18 @@
+# Add what you want to install
+
+# Foramtting
+black
+black[jupyter]
+isort
+flake8
+
+# Visualization
+matplotlib
+japanize-matplotlib
+seaborn
+
+# Knowledge graph
+kglab
+
+# LLM 
+openai
