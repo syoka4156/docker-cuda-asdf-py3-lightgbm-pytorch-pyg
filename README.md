@@ -5,5 +5,5 @@ cuda11.7 + asdf + LightGBM + Pytorch + PyG
 ## Build docker image
 
 ```
-cd docker && docker-compose up --build
+cd docker && docker-compose -p project_name up --build
 ```
