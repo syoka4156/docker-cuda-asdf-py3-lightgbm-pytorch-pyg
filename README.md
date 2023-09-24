@@ -5,6 +5,6 @@ cuda11.7 + asdf + LightGBM + Pytorch + PyG
 ## Build docker image
 
 ```
-export PROJ_NM=hoge
-./build_docker_container.sh
+export PROJ_NM=foo
+sh build_docker_container.sh
 ```
