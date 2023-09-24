@@ -78,7 +78,7 @@ RUN /bin/bash -c "cd /usr/local/src/lightgbm/LightGBM && sh ./build-python.sh in
 
 CMD ["/bin/bash"]
 
-# Reference
+# References
 # https://zenn.dev/fastsnowy/articles/adc106a4a03dc1
 # https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html
 # https://nykergoto.hatenablog.jp/entry/2020/07/25/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%81%AAdockerfile%E3%82%92%E6%9B%B8%E3%81%8F%E3%81%A8%E3%81%8D%E3%81%AB%E6%B0%97%E3%82%92%E3%81%A4%E3%81%91%E3%81%A8%E3%81%8F%E3%81%A8%E8%89%AF%E3%81%84%E3%81%93

@@ -26,5 +26,5 @@ fi
 echo "starting build"
 docker-compose -p ${PROJECT} -f ./docker/docker-compose.yaml up --build
 
-# References
+# Reference
 # https://github.com/yikeda0124/docker-ros-cuda-py3
