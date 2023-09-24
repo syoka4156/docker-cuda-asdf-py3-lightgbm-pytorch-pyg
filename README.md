@@ -2,7 +2,7 @@
 
 cuda11.7 + asdf + LightGBM + Pytorch + PyG
 
-## Build docker image
+## Build docker container
 
 ```
 export PROJ_NM=foo
