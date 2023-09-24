@@ -4,7 +4,7 @@
 
 # Set the Docker container name from a project name (first argument).
 if [ -z $PROJ_NM ]; then
-  echo "Set PROJ_NM (e.g. 'export PROJ_NM=test_proj')"
+  echo "Set PROJ_NM (e.g. 'export PROJ_NM=foo')"
   exit 1
 fi
 PROJECT=$PROJ_NM
